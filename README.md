@@ -1,2 +1,2 @@
-# JS-module-06
-JS-autocheck-module-06
+# JS-module-2
+JS-autocheck-module-02
