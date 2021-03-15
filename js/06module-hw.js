@@ -999,4 +999,602 @@ uniqueGenres массив уникальных жанров - без повто�
 // ]
 // ) )
 
-/*24. */
+/*24. Используя метод find() дополни код так, чтобы:
+В переменной bookWithTitle получился объект книги название которой (свойство title) 
+совпадает со значением переменной BOOK_TITLE.
+В переменной bookByAuthor получился объект книги автор который (свойство author) 
+совпадает со значением переменной AUTHOR.*/
+
+// const books = [
+//   { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+//   { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+//   { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+//   { title: 'Красна как кровь', author: 'Ли Танит', rating: 7.94 },
+// ];
+// const BOOK_TITLE = 'Сон смешного человека';
+// const AUTHOR = 'Роберт Шекли';
+// // Пиши код ниже этой строки
+
+// const bookWithTitle = books.find(book => book.title === BOOK_TITLE);
+// console.log(bookWithTitle);
+// const bookByAuthor = books.find(book => book.author === AUTHOR);
+// console.log(bookByAuthor);
+
+/*25.Дополни функцию getUserWithEmail(users, email) так, чтобы она возвращала объект 
+пользователя, почта которого (свойство email) совпадает со значением параметра email. */
+
+// const getUserWithEmail = (users, email) => users.find(user => user.email === email);
+
+// console.log(getUserWithEmail([
+//     {
+//         name: 'Moore Hensley',
+//         email: 'moorehensley@indexia.com',
+//         eyeColor: 'blue',
+//         friends: ['Sharron Pace'],
+//         isActive: false,
+//         balance: 2811,
+//         skills: ['ipsum', 'lorem'],
+//         gender: 'male',
+//         age: 37,
+//     },
+//     {
+//         name: 'Sharlene Bush',
+//         email: 'sharlenebush@tubesys.com',
+//         eyeColor: 'blue',
+//         friends: ['Briana Decker', 'Sharron Pace'],
+//         isActive: true,
+//         balance: 3821,
+//         skills: ['tempor', 'mollit', 'commodo', 'veniam', 'laborum'],
+//         gender: 'female',
+//         age: 34,
+//     },
+//     {
+//         name: 'Ross Vazquez',
+//         email: 'rossvazquez@xinware.com',
+//         eyeColor: 'green',
+//         friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
+//         isActive: false,
+//         balance: 3793,
+//         skills: ['nulla', 'anim', 'proident', 'ipsum', 'elit'],
+//         gender: 'male',
+//         age: 24,
+//     },
+//     {
+//         name: 'Elma Head',
+//         email: 'elmahead@omatom.com',
+//         eyeColor: 'green',
+//         friends: ['Goldie Gentry', 'Aisha Tran'],
+//         isActive: true,
+//         balance: 2278,
+//         skills: ['adipisicing', 'irure', 'velit'],
+//         gender: 'female',
+//         age: 21,
+//     },
+//     {
+//         name: 'Carey Barr',
+//         email: 'careybarr@nurali.com',
+//         eyeColor: 'blue',
+//         friends: ['Jordan Sampson', 'Eddie Strong'],
+//         isActive: true,
+//         balance: 3951,
+//         skills: ['ex', 'culpa', 'nostrud'],
+//         gender: 'male',
+//         age: 27,
+//     },
+//     {
+//         name: 'Blackburn Dotson',
+//         email: 'blackburndotson@furnigeer.com',
+//         eyeColor: 'brown',
+//         friends: ['Jacklyn Lucas', 'Linda Chapman'],
+//         isActive: false,
+//         balance: 1498,
+//         skills: ['non', 'amet', 'ipsum'],
+//         gender: 'male',
+//         age: 38,
+//     },
+//     {
+//         name: 'Sheree Anthony',
+//         email: 'shereeanthony@kog.com',
+//         eyeColor: 'brown',
+//         friends: ['Goldie Gentry', 'Briana Decker'],
+//         isActive: true,
+//         balance: 2764,
+//         skills: ['lorem', 'veniam', 'culpa'],
+//         gender: 'female',
+//         age: 39,
+//     },
+// ], 'sharlenebush@tubesys.com'
+// ) )
+
+/*26. Используя метод every() дополни код так, чтобы:
+В переменной eachElementInFirstIsEven был результат проверки всех элементов массива firstArray на чётность.
+В переменной eachElementInFirstIsOdd был результат проверки всех элементов массива firstArray на нечётность.
+В переменной eachElementInSecondIsEven был результат проверки всех элементов массива secondArray на чётность.
+В переменной eachElementInSecondIsOdd был результат проверки всех элементов массива secondArray на нечётность.
+В переменной eachElementInThirdIsEven был результат проверки всех элементов массива thirdArray на чётность.
+В переменной eachElementInThirdIsOdd был результат проверки всех элементов массива thirdArray на нечётность. */
+
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Пиши код ниже этой строки
+
+// const eachElementInFirstIsEven = firstArray.every(el => el % 2 === 0);
+// const eachElementInFirstIsOdd = firstArray.every(el => el % 2 !== 0);
+
+// const eachElementInSecondIsEven = secondArray.every(el => el %2 === 0);
+// const eachElementInSecondIsOdd = secondArray.every(el => el % 2 !== 0);
+
+// const eachElementInThirdIsEven = thirdArray.every(el => el %2 === 0);
+// const eachElementInThirdIsOdd = thirdArray.every(el => el % 2 !== 0);
+
+// console.log(eachElementInFirstIsEven);
+// console.log(eachElementInFirstIsOdd);
+// console.log(eachElementInSecondIsEven);
+// console.log(eachElementInSecondIsOdd);
+// console.log(eachElementInThirdIsEven);
+// console.log(eachElementInThirdIsOdd);
+
+/*27.Дополни функцию isEveryUserActive(users) так, чтобы она проверяла все ли пользователи 
+сейчас активны (свойство isActive) и возвращала true или false. */
+
+// const isEveryUserActive = users => users.every(user => user.isActive);
+
+// console.log(isEveryUserActive([
+//     {
+//         name: 'Moore Hensley',
+//         email: 'moorehensley@indexia.com',
+//         eyeColor: 'blue',
+//         friends: ['Sharron Pace'],
+//         isActive: false,
+//         balance: 2811,
+//         skills: ['ipsum', 'lorem'],
+//         gender: 'male',
+//         age: 37,
+//     },
+//     {
+//         name: 'Sharlene Bush',
+//         email: 'sharlenebush@tubesys.com',
+//         eyeColor: 'blue',
+//         friends: ['Briana Decker', 'Sharron Pace'],
+//         isActive: true,
+//         balance: 3821,
+//         skills: ['tempor', 'mollit', 'commodo', 'veniam', 'laborum'],
+//         gender: 'female',
+//         age: 34,
+//     },
+//     {
+//         name: 'Ross Vazquez',
+//         email: 'rossvazquez@xinware.com',
+//         eyeColor: 'green',
+//         friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
+//         isActive: false,
+//         balance: 3793,
+//         skills: ['nulla', 'anim', 'proident', 'ipsum', 'elit'],
+//         gender: 'male',
+//         age: 24,
+//     },
+//     {
+//         name: 'Elma Head',
+//         email: 'elmahead@omatom.com',
+//         eyeColor: 'green',
+//         friends: ['Goldie Gentry', 'Aisha Tran'],
+//         isActive: true,
+//         balance: 2278,
+//         skills: ['adipisicing', 'irure', 'velit'],
+//         gender: 'female',
+//         age: 21,
+//     },
+//     {
+//         name: 'Carey Barr',
+//         email: 'careybarr@nurali.com',
+//         eyeColor: 'blue',
+//         friends: ['Jordan Sampson', 'Eddie Strong'],
+//         isActive: true,
+//         balance: 3951,
+//         skills: ['ex', 'culpa', 'nostrud'],
+//         gender: 'male',
+//         age: 27,
+//     },
+//     {
+//         name: 'Blackburn Dotson',
+//         email: 'blackburndotson@furnigeer.com',
+//         eyeColor: 'brown',
+//         friends: ['Jacklyn Lucas', 'Linda Chapman'],
+//         isActive: false,
+//         balance: 1498,
+//         skills: ['non', 'amet', 'ipsum'],
+//         gender: 'male',
+//         age: 38,
+//     },
+//     {
+//         name: 'Sheree Anthony',
+//         email: 'shereeanthony@kog.com',
+//         eyeColor: 'brown',
+//         friends: ['Goldie Gentry', 'Briana Decker'],
+//         isActive: true,
+//         balance: 2764,
+//         skills: ['lorem', 'veniam', 'culpa'],
+//         gender: 'female',
+//         age: 39,
+//     },
+// ]
+// ) )
+
+/*28. Используя метод some() дополни код так, чтобы:
+В переменной anyElementInFirstIsEven был результат проверки наличия чётных элементов в массиве firstArray.
+В переменной anyElementInFirstIsOdd был результат проверки наличия нечётных элементов в массиве firstArray.
+В переменной anyElementInSecondIsEven был результат проверки наличия чётных элементов в массиве secondArray.
+В переменной anyElementInSecondIsOdd был результат проверки наличия нечётных элементов в массиве secondArray.
+В переменной anyElementInThirdIsEven был результат проверки наличия чётных элементов в массиве thirdArray.
+В переменной anyElementInThirdIsOdd был результат проверки наличия нечётных элементов в массиве thirdArray. */
+
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Пиши код ниже этой строки
+
+// const anyElementInFirstIsEven = firstArray.some(el => el % 2 === 0);
+// const anyElementInFirstIsOdd = firstArray.some(el => el % 2 !== 0);
+
+// const anyElementInSecondIsEven = secondArray.some(el => el % 2 === 0);
+// const anyElementInSecondIsOdd = secondArray.some(el => el % 2 !== 0);
+
+// const anyElementInThirdIsEven = thirdArray.some(el => el % 2 === 0);
+// const anyElementInThirdIsOdd = thirdArray.some(el => el % 2 !== 0);
+
+// console.log(anyElementInFirstIsEven);
+// console.log(anyElementInFirstIsOdd);
+// console.log(anyElementInSecondIsEven);
+// console.log(anyElementInSecondIsOdd);
+// console.log(anyElementInThirdIsEven);
+// console.log(anyElementInThirdIsOdd);
+
+/*29.Дополни функцию isAnyUserActive(users) так, чтобы она проверяла наличие активных 
+пользователей (свойство isActive) и возвращала true или false. */
+
+// const isAnyUserActive = users => users.some(user => user.isActive);
+
+// console.log(isAnyUserActive([
+//     {
+//         name: 'Moore Hensley',
+//         email: 'moorehensley@indexia.com',
+//         eyeColor: 'blue',
+//         friends: ['Sharron Pace'],
+//         isActive: false,
+//         balance: 2811,
+//         skills: ['ipsum', 'lorem'],
+//         gender: 'male',
+//         age: 37,
+//     },
+//     {
+//         name: 'Sharlene Bush',
+//         email: 'sharlenebush@tubesys.com',
+//         eyeColor: 'blue',
+//         friends: ['Briana Decker', 'Sharron Pace'],
+//         isActive: true,
+//         balance: 3821,
+//         skills: ['tempor', 'mollit', 'commodo', 'veniam', 'laborum'],
+//         gender: 'female',
+//         age: 34,
+//     },
+//     {
+//         name: 'Ross Vazquez',
+//         email: 'rossvazquez@xinware.com',
+//         eyeColor: 'green',
+//         friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
+//         isActive: false,
+//         balance: 3793,
+//         skills: ['nulla', 'anim', 'proident', 'ipsum', 'elit'],
+//         gender: 'male',
+//         age: 24,
+//     },
+//     {
+//         name: 'Elma Head',
+//         email: 'elmahead@omatom.com',
+//         eyeColor: 'green',
+//         friends: ['Goldie Gentry', 'Aisha Tran'],
+//         isActive: true,
+//         balance: 2278,
+//         skills: ['adipisicing', 'irure', 'velit'],
+//         gender: 'female',
+//         age: 21,
+//     },
+//     {
+//         name: 'Carey Barr',
+//         email: 'careybarr@nurali.com',
+//         eyeColor: 'blue',
+//         friends: ['Jordan Sampson', 'Eddie Strong'],
+//         isActive: true,
+//         balance: 3951,
+//         skills: ['ex', 'culpa', 'nostrud'],
+//         gender: 'male',
+//         age: 27,
+//     },
+//     {
+//         name: 'Blackburn Dotson',
+//         email: 'blackburndotson@furnigeer.com',
+//         eyeColor: 'brown',
+//         friends: ['Jacklyn Lucas', 'Linda Chapman'],
+//         isActive: false,
+//         balance: 1498,
+//         skills: ['non', 'amet', 'ipsum'],
+//         gender: 'male',
+//         age: 38,
+//     },
+//     {
+//         name: 'Sheree Anthony',
+//         email: 'shereeanthony@kog.com',
+//         eyeColor: 'brown',
+//         friends: ['Goldie Gentry', 'Briana Decker'],
+//         isActive: true,
+//         balance: 2764,
+//         skills: ['lorem', 'veniam', 'culpa'],
+//         gender: 'female',
+//         age: 39,
+//     },
+// ]
+// ) )
+
+/*30.Игровому сервису необходим функционал подсчёта среднего времени проведённого в играх. 
+Дополни код так, чтобы в переменной totalPlayTime получилось общее игровое время из 
+массива playtimes. */
+
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// // Пиши код ниже этой строки
+
+// const totalPlayTime = playtimes.reduce((total, playerTime) => {
+//     return total+playerTime
+// }, 0);
+
+// // Пиши код выше этой строки
+// const averagePlayTime = totalPlayTime / playtimes.length;
+// console.log(averagePlayTime);
+
+/*31. Нашему сервису необходимо рассчитать среднее время проведённое в одной игре 
+для каждого игрока, и получить общую сумму этих времён. Рассчитать время для каждого 
+из игроков, можно разделив его время (свойство playtime) на количество 
+игр (свойство gamesPlayed). */
+
+// const players = [
+//   { name: 'Манго', playtime: 1270, gamesPlayed: 4 },
+//   { name: 'Поли', playtime: 469, gamesPlayed: 2 },
+//   { name: 'Аякс', playtime: 690, gamesPlayed: 3 },
+//   { name: 'Киви', playtime: 241, gamesPlayed: 1 },
+// ];
+// // Пиши код ниже этой строки
+
+// const totalAveragePlaytimePerGame = players.reduce((totalAvarage, { playtime, gamesPlayed }) => totalAvarage + playtime / gamesPlayed, 0);
+// console.log(totalAveragePlaytimePerGame);
+
+/*32. Дополни функцию calculateTotalBalance(users) так, чтобы она считала и возвращала 
+сумму всех средств (свойство balance) которые хранят пользователи из массива users. */
+
+// const calculateTotalBalance = users => users.reduce((totalBalance, user) => totalBalance + user.balance, 0);
+
+// console.log(calculateTotalBalance([
+//     {
+//         name: 'Moore Hensley',
+//         email: 'moorehensley@indexia.com',
+//         eyeColor: 'blue',
+//         friends: ['Sharron Pace'],
+//         isActive: false,
+//         balance: 2811,
+//         skills: ['ipsum', 'lorem'],
+//         gender: 'male',
+//         age: 37,
+//     },
+//     {
+//         name: 'Sharlene Bush',
+//         email: 'sharlenebush@tubesys.com',
+//         eyeColor: 'blue',
+//         friends: ['Briana Decker', 'Sharron Pace'],
+//         isActive: true,
+//         balance: 3821,
+//         skills: ['tempor', 'mollit', 'commodo', 'veniam', 'laborum'],
+//         gender: 'female',
+//         age: 34,
+//     },
+//     {
+//         name: 'Ross Vazquez',
+//         email: 'rossvazquez@xinware.com',
+//         eyeColor: 'green',
+//         friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
+//         isActive: false,
+//         balance: 3793,
+//         skills: ['nulla', 'anim', 'proident', 'ipsum', 'elit'],
+//         gender: 'male',
+//         age: 24,
+//     },
+//     {
+//         name: 'Elma Head',
+//         email: 'elmahead@omatom.com',
+//         eyeColor: 'green',
+//         friends: ['Goldie Gentry', 'Aisha Tran'],
+//         isActive: true,
+//         balance: 2278,
+//         skills: ['adipisicing', 'irure', 'velit'],
+//         gender: 'female',
+//         age: 21,
+//     },
+//     {
+//         name: 'Carey Barr',
+//         email: 'careybarr@nurali.com',
+//         eyeColor: 'blue',
+//         friends: ['Jordan Sampson', 'Eddie Strong'],
+//         isActive: true,
+//         balance: 3951,
+//         skills: ['ex', 'culpa', 'nostrud'],
+//         gender: 'male',
+//         age: 27,
+//     },
+//     {
+//         name: 'Blackburn Dotson',
+//         email: 'blackburndotson@furnigeer.com',
+//         eyeColor: 'brown',
+//         friends: ['Jacklyn Lucas', 'Linda Chapman'],
+//         isActive: false,
+//         balance: 1498,
+//         skills: ['non', 'amet', 'ipsum'],
+//         gender: 'male',
+//         age: 38,
+//     },
+//     {
+//         name: 'Sheree Anthony',
+//         email: 'shereeanthony@kog.com',
+//         eyeColor: 'brown',
+//         friends: ['Goldie Gentry', 'Briana Decker'],
+//         isActive: true,
+//         balance: 2764,
+//         skills: ['lorem', 'veniam', 'culpa'],
+//         gender: 'female',
+//         age: 39,
+//     },
+// ]
+// ) )
+
+/*33. Дополни функцию getTotalFriendCount(users) так, чтобы она считала и возвращала общее 
+количество друзей (свойство friends) всех пользователей из массива users. */
+
+// const getTotalFriendCount = users => users.reduce((totalFriend, user) => totalFriend + user.friends.length, 0);
+
+// console.log(getTotalFriendCount([
+//     {
+//         name: 'Moore Hensley',
+//         email: 'moorehensley@indexia.com',
+//         eyeColor: 'blue',
+//         friends: ['Sharron Pace'],
+//         isActive: false,
+//         balance: 2811,
+//         skills: ['ipsum', 'lorem'],
+//         gender: 'male',
+//         age: 37,
+//     },
+//     {
+//         name: 'Sharlene Bush',
+//         email: 'sharlenebush@tubesys.com',
+//         eyeColor: 'blue',
+//         friends: ['Briana Decker', 'Sharron Pace'],
+//         isActive: true,
+//         balance: 3821,
+//         skills: ['tempor', 'mollit', 'commodo', 'veniam', 'laborum'],
+//         gender: 'female',
+//         age: 34,
+//     },
+//     {
+//         name: 'Ross Vazquez',
+//         email: 'rossvazquez@xinware.com',
+//         eyeColor: 'green',
+//         friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
+//         isActive: false,
+//         balance: 3793,
+//         skills: ['nulla', 'anim', 'proident', 'ipsum', 'elit'],
+//         gender: 'male',
+//         age: 24,
+//     },
+//     {
+//         name: 'Elma Head',
+//         email: 'elmahead@omatom.com',
+//         eyeColor: 'green',
+//         friends: ['Goldie Gentry', 'Aisha Tran'],
+//         isActive: true,
+//         balance: 2278,
+//         skills: ['adipisicing', 'irure', 'velit'],
+//         gender: 'female',
+//         age: 21,
+//     },
+//     {
+//         name: 'Carey Barr',
+//         email: 'careybarr@nurali.com',
+//         eyeColor: 'blue',
+//         friends: ['Jordan Sampson', 'Eddie Strong'],
+//         isActive: true,
+//         balance: 3951,
+//         skills: ['ex', 'culpa', 'nostrud'],
+//         gender: 'male',
+//         age: 27,
+//     },
+//     {
+//         name: 'Blackburn Dotson',
+//         email: 'blackburndotson@furnigeer.com',
+//         eyeColor: 'brown',
+//         friends: ['Jacklyn Lucas', 'Linda Chapman'],
+//         isActive: false,
+//         balance: 1498,
+//         skills: ['non', 'amet', 'ipsum'],
+//         gender: 'male',
+//         age: 38,
+//     },
+//     {
+//         name: 'Sheree Anthony',
+//         email: 'shereeanthony@kog.com',
+//         eyeColor: 'brown',
+//         friends: ['Goldie Gentry', 'Briana Decker'],
+//         isActive: true,
+//         balance: 2764,
+//         skills: ['lorem', 'veniam', 'culpa'],
+//         gender: 'female',
+//         age: 39,
+//     },
+// ]
+// ) )
+
+/*34. Дополни код так, чтобы в переменной ascendingReleaseDates получилась отсортированная 
+по возрастанию копия массива releaseDates, а в переменной alphabeticalAuthors копия массива 
+имён авторов authors отсортированная в по алфавиту. */
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   'Ли Танит',
+//   'Бернард Корнуэлл',
+//   'Роберт Шекли',
+//   'Федор Достоевский'
+// ];
+// // Пиши код ниже этой строки
+
+// const ascendingReleaseDates = [...releaseDates].sort();
+// console.log(ascendingReleaseDates);
+
+// const alphabeticalAuthors = [...authors].sort();
+// console.log(alphabeticalAuthors);
+
+/*35. Онлайн бибилиотеке необходимо отображать книги сортированные по дате издания, 
+по её возрастанию или убыванию. Дополни код так, чтобы в переменной ascendingReleaseDates 
+получилась отсортированная по возрастанию копия массива releaseDates, а в переменной 
+descendingReleaseDates копия отсортированная по убыванию. */
+
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// // Пиши код ниже этой строки
+
+// const ascendingReleaseDates = [...releaseDates].sort((firtsYear, lastYear) => firtsYear - lastYear);
+// console.log(ascendingReleaseDates);
+
+// const descendingReleaseDates = [...releaseDates].sort((firtsYear, lastYear) => lastYear - firtsYear);
+// console.log(descendingReleaseDates);
+
+/*36. Онлайн бибилиотеке необходимо отображать книги отсортированные по автору, в алфавитном 
+и обратном алфавитном порядке. Дополни код так, чтобы в переменной authorsInAlphabetOrder 
+получилась отсортированная по алфавиту копия массива authors, а в переменной authorsInReversedOrder 
+копия отсортированная в обратном алфавитном порядке. */
+
+// const authors = [
+//     'Ли Танит',
+//      'Бернард Корнуэлл',
+//     'Роберт Шекли',
+//     'Федор Достоевский',
+//     'Говард Лавкрафт'
+//   ];
+//   // Пиши код ниже этой строки
+  
+// const authorsInAlphabetOrder = [...authors].sort((firstAuthor, secondAuthor) => firstAuthor.localeCompare(secondAuthor));
+// console.log(authorsInAlphabetOrder);
+// const authorsInReversedOrder = [...authors].sort((firstAuthor, secondAuthor) => secondAuthor.localeCompare(firstAuthor));
+// console.log(authorsInReversedOrder);
+
+/*37. */
